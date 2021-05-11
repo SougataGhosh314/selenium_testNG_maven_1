@@ -100,7 +100,30 @@
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
+          
+          <configuration>  
+			<suiteXmlFiles>  
+				<suiteXmlFile>C:\Users\Sougata Ghosh\Downloads\Compressed\maven_selenium_testNG\MavenProject\testng.xml</suiteXmlFile>  
+			</suiteXmlFiles>  
+		  </configuration>
+          
         </plugin>
+        
+        
+        <plugin>  
+			<groupId>org.apache.maven.plugins</groupId>  
+			<artifactId>maven-source-plugin</artifactId>  
+			<executions>  
+				<execution>  
+				<id>attach-sources</id>  
+				<goals>  
+					<goal>jar</goal>  
+				</goals>  
+				</execution>  
+			</executions>  
+		</plugin>
+        
+        
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.0.2</version>
